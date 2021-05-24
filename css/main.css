@@ -1,1 +1,133 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary-color: rgb(11, 11, 245);
+}
+
+body {
+  background: #f5f3f2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .3em;
+}
+
+.hero .left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.hero .left-col .primary-cta {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: .6em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  display: inline-block;
+}
+
+.hero .left-col .primary-cta-v {
+  display: block;
+  margin-top: 1em;
+}
+
+.hero .left-col .primary-cta-v img {
+  margin-right: .5em;
+}
+
+.hero .hero-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+section.features {
+  background: #203047;
+  color: white;
+}
+
+section.features ul.features-list {
+  margin: 0;
+  padding-left: .1em;
+}
+
+section.features ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+section.features ul.features-list li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/bullet.svg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+
+section.features .feature-sec-img {
+  display: none;
+}
+
+.testimonials-section {
+  background: var(--primary-color);
+}
+/*# sourceMappingURL=main.css.map */
