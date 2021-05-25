@@ -129,12 +129,71 @@ section.features {
     }
 
     .feature-sec-img {
-        display: none'
+        display: none;
 
     }
 }
 
 .testimonials-section {
     background: var(--primary-color);
+    color: white;
 
+    li {
+        background-color: #006BD6;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+
+        img {
+            width: 5em;
+            height: 5em;
+            border: 5px solid #006BD6;
+            border-radius: 50%;
+            margin-top: -4.5em;
+            ;
+        }
+
+    }
+}
+
+section.contact-section {
+    h2 {
+        font-size: 2em;
+    }
+
+    label {
+        display: block;
+        margin-bottom: .5em;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: .8em;
+        margin-bottom: 1em;
+        border-radius: .3em;
+        border: 1px solid gray;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: bold;
+        font-size: 1.3em;
+        border: none;
+        margin-bottom: 5em;
+        border-radius: 5em;
+        padding: .8em 2em;
+        display: inline-block;
+        width: unset;
+        cursor: pointer;
+
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
 }
