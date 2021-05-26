@@ -321,6 +321,9 @@ nav .mobile-menu-exit {
   .primary-cta {
     margin-right: 1em;
   }
+  section.features {
+    position: relative;
+  }
   section.features ul.features-list {
     display: block;
     margin-left: 5em;
@@ -331,6 +334,60 @@ nav .mobile-menu-exit {
   section.features ul.features-list li:before {
     width: 30px;
     height: 30px;
+  }
+  section.features .feature-sec-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-section .contact-right {
+    position: absolute;
+    right: 0%;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-section .contact-right iframe {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .features:before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background-color: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("../images/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
